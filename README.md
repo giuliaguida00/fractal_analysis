@@ -8,17 +8,17 @@ the micro-scale. The characteristic size separating structural features and text
 directly from the results of the fractal analysis of the contour of the particle, and is a decreasing
 fraction of particle dimension. 
 
-For deeper details and application of the method, please read the following publications:
+For deeper details and applications of the method, please read the following publications:
 
-G Guida, F Casini, GMB Viggiani (2017), "Contour fractal analysis of grains", EPJ Web of Conferences, 140, 05008
+- G Guida, F Casini, GMB Viggiani (2017), "Contour fractal analysis of grains", EPJ Web of Conferences, 140, 05008
 
-G Guida, G Viggiani, F Casini (2020), "Multi-scale morphological descriptors from the fractal analysis of particle contour", Acta Geotechnica 15 (5), 1067-1080
+- G Guida, G Viggiani, F Casini (2020), "Multi-scale morphological descriptors from the fractal analysis of particle contour", Acta Geotechnica 15 (5), 1067-1080
 
-G Guida, D Sebastiani, F Casini, S Miliziano (2019), "Grain morphology and strength dilatancy of sands", Géotechnique Letters 9 (4), 245-253
+- G Guida, D Sebastiani, F Casini, S Miliziano (2019), "Grain morphology and strength dilatancy of sands", Géotechnique Letters 9 (4), 245-253
 
-G Guida, F Casini, GMB Viggiani (2021), "A fractal analysis method to characterise rock joint morphology", IOP Conference Series: Earth and Environmental Science, 833 (1), 012067
+- G Guida, F Casini, GMB Viggiani (2021), "A fractal analysis method to characterise rock joint morphology", IOP Conference Series: Earth and Environmental Science, 833 (1), 012067
 
-D Sebastiani, S Miliziano, G Guida, F Casini (2021) "Preliminary evidences on the influence of grains micro-structural features on the TBM tools wear", Geotechnical Aspects of Underground Construction in Soft Ground, 401-407
+- D Sebastiani, S Miliziano, G Guida, F Casini (2021) "Preliminary evidences on the influence of grains micro-structural features on the TBM tools wear", Geotechnical Aspects of Underground Construction in Soft Ground, 401-407
 
 ## 1.1 The Method
 Fractal analysis stems from the observation that the measured length of the contour of many natural
