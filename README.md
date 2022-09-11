@@ -1,6 +1,6 @@
-# Fractal Analysis of Particle Contour
-## Introduction
-This code has been developed by the author in order to perform the fractal analysis of particle contour.
+# 1 Introduction
+
+This code has been developed in order to perform the fractal analysis of particle contour.
 It characterises the morphology of soil particles over the range of experimentally accessible scales
 through three new non-dimensional quantitative morphological descriptors characterising: (i) overall
 particle shape at the macro-scale, (ii) particle regularity at the meso-scale, and (iii) particle texture at
@@ -8,7 +8,7 @@ the micro-scale. The characteristic size separating structural features and text
 directly from the results of the fractal analysis of the contour of the particle, and is a decreasing
 fraction of particle dimension. 
 
-### The Method
+## 1.1 The Method
 Fractal analysis stems from the observation that the measured length of the contour of many natural
 irregular closed shapes, $p$, is a function of the measurement scale, $b$ (Mandelbrot 1967), and that the
 smaller the measurement scale, the longer the measured length becomes. The approximations with
@@ -49,7 +49,7 @@ Finally, the normalised perimeter, $p=D$, is plotted versus the corresponding no
 
 ![image](https://user-images.githubusercontent.com/110109054/189543594-c7e91552-5d8d-4a60-8890-6d95ae15d29c.png)
 
-### Three scales of information
+## 1.2 Three scales of information
 
 Figure 1.2 shows an example of the results of the fractal analysis applied to a natural grain of Toyoura
 sand. A SEM photograph of the sand grain at a magnification factor of 300x (Fig. 1.2a) was taken from SEM images online database (http://web.utk.edu/~alshibli/research/MGM/archives.php).
@@ -104,8 +104,8 @@ For example in Figure 1.2, $D=1.55$.
 
 ![image](https://user-images.githubusercontent.com/110109054/189544134-4d25a5fb-8a98-4d06-8b9d-7ea277f70f05.png)
 
-## Inputs
-### Image
+# 2 Inputs
+## 2.1  Image
 
 The matlab code 'main.m' takes as input a two-dimensional binarized image of a grain from the folder
 'grains' and gives back fractal analysis results.
@@ -140,7 +140,7 @@ contour of the grain under examination.
 ![image](https://user-images.githubusercontent.com/110109054/189544393-d3127e1a-706c-4d07-8b9d-90bec58515e1.png)
 
 
-### Data
+## 2.2 Data
 
 There are other properties that have to be set:
 
@@ -150,8 +150,8 @@ There are other properties that have to be set:
 
 3. The tolerance "tol" on linear regressions.
 
-## Particle Contour
-### Boundary extraction
+# 3 Particle Contour
+## 3.1 Boundary extraction
 
 The function "[boundary,cc]=boundary(bw)", takes as input the binarized image bw and gives back:
 
@@ -178,7 +178,7 @@ Geometric and shape descriptors are printed in the command window during running
 
 ![image](https://user-images.githubusercontent.com/110109054/189544612-c5cca9c8-b745-406f-abf0-8f56c55662a8.png)
 
-## Fractal Analysis
+# 4 Fractal Analysis
 
 The "function[b_D,p_D]=fractal_analysis(geom,boundary,n_b)" computes the contour length of
 the particle using set of sticks as units. It takes as input the geometrical information of the particle
@@ -198,7 +198,7 @@ This is the most time consuming part of the code, that anyway takes few minutes 
 decrease the number of sticks "n_b", or the lower bound limit in the vector bacc (see Section 4.2) from
 $10^{-3}$ to $10^{-2}$.
 
-### 1st loop
+## 4.1 1st loop
 
 The first loop runs the analysis over different starting points "nn", corresponding to each point of the
 particle boundary. Everytime the loop restarts, the matrix of boundary coordinates is sorted into the
@@ -210,13 +210,13 @@ distances between the starting point and all the other point of the boundary.
 The stick length vector $bacc$ (from the italian "bacchetta"=transaltion of stick) is log equally spaced
 between $10^{-3}$ and $10^0$ times $D$.
 
-### 2nd Loop
+## 4.2 2nd Loop
 
 The second loop, inside the first, runs over the stick lengths taken from the vector "bacc".
 Every time a new stick is used, the starting point coordinates are newly imposed. The starting
 coordinates "x0" and "y0" are taken from the sorted boundary coordinates bound defined in the 1st Loop.
 
-### 3rd Loop
+## 4.3 3rd Loop
 
 The third loop detects the intersection point between the stick and particle boundary. In practice it
 consists to fix one end of the stick in the starting point and to detect the intersection between the
@@ -235,14 +235,14 @@ lengths and many column as the number of contour points.
 The output vectors of perimeters "p_D", chooses the minimum value of contour length, related to the
 associated stick length "b_D", along all the starting points adopted.
 
-## Morphology Descriptors
+# 5 Morphology Descriptors
 
 The fractal descriptors are evaluated by the function:
 
 "[mhu,m,M,ind_mhu,ind_m,ind_M]=MyMorphology(p_D,b_D)", that takes as input the results of fractal analysis, "p_D" and "b_D", containing the value of minimum perimeter and the associated stick length respectively, giving back as outputs the fractal morphological descriptors: $\mu$, $m$, $M$, and the vector of
 indices where they were computed.
 
-### Linear regression
+## 5.1 Linear regression
 The fractal analysis results are reported in a log-log space (Figure 5.1), "b_D" $versus$ "p_D", where it is
 possible to appreciate the linear relations between the two variables (=contour's self similarities).
 
@@ -274,7 +274,7 @@ In the case of Fig. 5.1 the contour is mainly characterise by the complexity $\m
 because the blue star is much shifted to the right. This means that the grain contour is regular at all
 the scales.
 
-## 6 Data Saving
+# 6 Data Saving
 
 Data are saved in a file "results.xls", inside a sheet with the same name of the grain image. In this
 way, all the analysis can be stored in a same file, but automatically on different sheets.
@@ -294,7 +294,7 @@ $CX$;
 6. The initial, ($b/D|_{min}$; $p/D|_{min}$), intermediate, ($b/D|_m; p/D|_m$), and final coordinates, (b_D|_M; p/D|_M$),
 of the regressions.
 
-## References
+# References
 Beucher, Serge et al. (1992). "The watershed transformation applied to image segmentation". In:
 SCANNING MICROSCOPY-SUPPLEMENT-, pp. 299-299.
 
