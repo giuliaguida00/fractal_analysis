@@ -296,15 +296,22 @@ of the regressions.
 
 ## References
 Beucher, Serge et al. (1992). "The watershed transformation applied to image segmentation". In:
-SCANNING MICROSCOPY-SUPPLEMENT-, pp. 299{299.
+SCANNING MICROSCOPY-SUPPLEMENT-, pp. 299-299.
+
 Mandelbrot, Benoit (1967). "How long is the coast of Britain? Statistical self-similarity and fractional
-dimension". In: science 156.3775, pp. 636{638.
+dimension". In: science 156.3775, pp. 636-638.
+
 Orford, JD and WB Whalley (1983). "The use of the fractal dimension to quantify the morphology of
-irregular-shaped particles". In: Sedimentology 30.5, pp. 655{668.
+irregular-shaped particles". In: Sedimentology 30.5, pp. 655-668.
+
 Otsu, Nobuyuki (1979). "A threshold selection method from gray-level histograms". In: IEEE
-transactions on systems, man, and cybernetics 9.1, pp. 62{66.
+transactions on systems, man, and cybernetics 9.1, pp. 62-66.
+
 Stachowiak, GW (1998). "Numerical characterization of wear particles morphology and angularity of
-particles and surfaces". In: Tribology International 31.1-3, pp. 139{157.
-Vallejo, L.E. (1996). "Fractal analysis of granular materials". In: Géotechnique 45.1, pp. 159{163.
+particles and surfaces". In: Tribology International 31.1-3, pp. 139-157.
+
+Vallejo, L.E. (1996). "Fractal analysis of granular materials". In: Géotechnique 45.1, pp. 159-163.
+
 Von Koch, Helge (1906). "Une méthode géométrique élémentaire pour l'étude de certaines questions
-de la théorie des courbes planes". In: Acta mathematica 30.1, pp. 145{174.
+de la théorie des courbes planes". In: Acta mathematica 30.1, pp. 145-174.
+
