@@ -1,8 +1,8 @@
 cff-version: 1.1.0
 message: "If you use this software, please cite it as below."
-authors:
-family-names: Guida
-given-names: Giulia
+author:
+surname: Guida
+name: Giulia
 orcid: https://orcid.org/0000-0003-1129-7906
 title: giuliaguida00/fractal_analysis: Fractal Analysis of Contours
 version: v1.0.0
